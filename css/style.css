@@ -33,10 +33,10 @@ h1 {
     font-family: "Satoshi";
     font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 52px;
+    line-height: 58px;
     /* or 114% */
-    text-align: left;
+    text-align: center;
 
     color: #212121;
 
@@ -49,8 +49,8 @@ h1 {
     font-family: "Satoshi";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 30px;
     /* or 180% */
     text-align: left;
 
@@ -67,13 +67,7 @@ h1 {
     max-width: 500px;
 }
 .hero .cta {
-    margin-top: 50px;
-}
-.video{
-    width: 500px;
-}
-.video iframe{
-    border-radius: 10px;
+    margin-top: 30px;
 }
 .tag {
     padding: 8px 14px;
@@ -86,15 +80,16 @@ h1 {
     font-weight: 700;
 }
 .hero {
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
     gap: 50px
+}
+.subTitle{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 30px;
 }
 .satisfied {
     font-family: "Satoshi";
@@ -279,9 +274,6 @@ h2 {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
-.waitlist {
-    display: none;
-}
 .nospam {
     margin-bottom: 30px;
     font-size: 14px;
@@ -317,6 +309,56 @@ h2 {
     -moz-appearance: none;
     appearance: none;
 }
+#mc_embed_signup_scroll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 5px;
+
+    border-radius: 30px;
+
+    border: 1px solid #dedede;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-left: 15px;
+
+    margin-top: 30px;
+
+    transition: 0.5s;
+}
+.mc-field-group{
+    width: 100%;
+}
+.waitlist .cta{
+    margin-top: 0;
+}
+.waitlist input{
+    border: 0;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+input:focus, input:hover{
+    outline: 0;
+    box-shadow: none;
+}
+video{
+    width: 1300px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 40px rgb(0,0,0,0.2);
+}
+
+#mc_embed_signup_scroll:hover{
+    border-color: #212121;
+}
+
 @media screen and (max-width: 768px) {
     .hero{
         display: block;
@@ -404,13 +446,16 @@ h2 {
         margin-top: 20px;
         font-size: 18px;
         line-height: 27px;
-        text-align: left;
+        text-align: center;
+    }
+    .hero{
+        text-align: center;
     }
     .center {
-        text-align: left;
+        text-align: center;
     }
     h1 {
-        text-align: left;
+        text-align: center;
     }
     .hero .cta {
         margin-top: 30px;
@@ -437,6 +482,12 @@ h2 {
         border-bottom-right-radius: 0;
     }
     .hero .cta{
-        margin-bottom: 50px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    video{
+        max-width: 100%;
+        box-shadow: 0 4px 8px rgb(0,0,0,0.1);
+        margin-top: 60px;
     }
 }
